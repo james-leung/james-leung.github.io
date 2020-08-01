@@ -1,0 +1,11 @@
+- name: Github pages
+  image: github.png
+  image-url: https://pages.github.com/
+
+- name: Jekyll
+  image: jekyll.png
+  image-url: https://jekyllrb.com/
+
+- name: Bootstrap 4
+  image: bootstrap.png
+  image-url: https://getbootstrap.com/
