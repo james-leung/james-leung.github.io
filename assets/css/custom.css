@@ -1,0 +1,66 @@
+.vertical-spacing {
+  margin: 40px auto;
+}
+
+.vt-spacing {
+  margin-top: 30px;
+}
+
+.index {
+  padding: 0 10px;
+  margin: 5px;
+  font-size: 60px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.task-col {
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.task-card {
+  border: #555;
+  background-color: #ddd;
+  margin: 0 10px;
+}
+
+.task-desc {
+  margin: 20px 10px 0 10px;
+}
+
+/* Style social font awesome icons */
+.fa {
+  padding: 10px;
+  margin: 5px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Github */
+.fa-github {
+  background: #444444;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}

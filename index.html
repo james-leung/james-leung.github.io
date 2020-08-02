@@ -8,17 +8,58 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
 
 <div class="container">
   {% if page.url == "/" %}
-  <div>
-    <h3>Web and Software Developer</h3>
-    <h4>Ph.D. in Physics</h4>
-  </div>
-
-  <div>
-    Welcome to my Portfolio!!
+  <div class="row justify-content-center vt-spacing">
+    <div class="col-md-4 text-center task-col">
+      <div class="card task-card">
+        <div class="task-desc">
+          <i class="fas fa-users index"></i>
+        </div>
+        <div class="task-desc">
+          <h5>Presentable Front-end Applications</h5>
+        </div>
+        <div class="task-desc">
+          <p>
+            Designing smart and user-friendly interface, whether it's a single-page app or a static website, to ensure a pleasant user experience.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 text-center task-col">
+      <div class="card task-card">
+          <div class="task-desc">
+            <i class="fas fa-server index"></i>
+            <i class="fas fa-exchange-alt index"></i>
+            <i class="fas fa-database index"></i>
+          </div>
+          <div class="task-desc">
+            <h5>Solid Back-end Services</h5>
+          </div>
+          <div class="task-desc">
+            <p>
+              Building a full-fledged REST API on the server side that executes queries and commands on a database.
+            </p>
+          </div>
+      </div>
+    </div>
+    <div class="col-md-4 text-center task-col">
+      <div class="card task-card">
+        <div class="task-desc">
+          <i class="fas fa-sync index"></i>
+        </div>
+        <div class="task-desc">
+          <h5>Continuous Software Deployment</h5>
+        </div>
+        <div class="task-desc">
+          <p>
+            Fully deploy a website or software on a cloud or remote server and establish a robust CI/CD pipeline equipped with testing.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Sticky - add sticky tag to the post you want to highlight here - tags: [sticky] -->
-  {% for post in site.posts %} {% if post.tags contains "sticky" %}
+  <!-- {% for post in site.posts %} {% if post.tags contains "sticky" %}
   <div
     class="jumbotron jumbotron-fluid jumbotron-home pt-0 pb-0 mt-3 mb-2rem bg-lightblue position-relative"
   >
@@ -40,6 +81,6 @@ description: "A great Jekyll theme developed by Sal @wowthemesnet."
       </div>
     </div>
   </div>
-  {% endif %} {% endfor %} {% endif %}
+  {% endif %} {% endfor %} {% endif %} -->
   <!--endif page url is / -->
 </div>

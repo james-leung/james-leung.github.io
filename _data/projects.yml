@@ -1,0 +1,17 @@
+- name: Burgler (Food Ordering Website)
+  techs: Angular, .Net Core, SQL Server
+  description: A full-stack web single-page app where customers can view a fast food restaurant menu and order food from online. Interactive UI for users to customise their burgers along with re-ordering functionality. Equipped with secure social login.
+  image:
+  url: http://burgler.azurewebsites.net/
+
+- name: QRSim (Quantum Circuit Simulator)
+  techs: Python, Numpy, Jupyter Notebook
+  description: Given a quantum circuit, this simulator calculates the output final states simultaneously assuming all error sources are known. This helps predict circuit errors.
+  image:
+  url:
+
+- name: Quantum Gate Optimiser
+  techs: Python, Numpy, Jupyter Notebook
+  description: A tool that generates a laser frequency pattern which minimises motional disturbances to a set of trapped ions.
+  image:
+  url:

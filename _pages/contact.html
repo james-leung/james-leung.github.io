@@ -1,0 +1,18 @@
+---
+title: "Contact"
+permalink: "/contact.html"
+---
+
+<form action="https://formspree.io/{{site.email}}" method="POST">
+  <p class="mb-4">Leave a message and I'll get back to you soon!</p>
+  <div class="form-group row">
+    <div class="col-md-6">
+      <input class="form-control" name="name" placeholder="Name*" required type="text">
+    </div>
+    <div class="col-md-6">
+      <input class="form-control" name="_replyto" placeholder="E-mail Address*" required type="email">
+    </div>
+  </div>
+  <textarea class="form-control mb-3" name="message" placeholder="Message*" required rows="8"></textarea>
+  <input class="btn btn-success" type="submit" value="Send">
+</form>

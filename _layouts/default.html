@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{page.title}} | {{site.name}}</title>
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>{{page.title}}
+      |
+      {{site.name}}</title>
 
     {% seo %}
 
     <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/{{site.favicon}}">
 
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" rel="stylesheet">
+
+    <!-- Add icon library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Google Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
@@ -22,64 +27,73 @@
     <!-- Theme Stylesheet -->
     <link rel="stylesheet" href="{{site.baseurl}}/assets/css/theme.css">
 
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/custom.css">
+
     <!-- Jquery on header to make sure everything works, the rest  of the scripts in footer for fast loading -->
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+    <script crossorigin="anonymous" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
     {% include tracking-header.html %}
 
 
-</head>
+  </head>
 
-<body class="{% if page.url == "/" %} homefirstpage {% endif %}">
+  <body class="{% if page.url == "/" %} homefirstpage {% endif %}">
 
     <!-- Navbar -->
-    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="{{ site.baseurl }}/index.html"><strong>{{site.name}}</strong></a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+    <nav class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top" id="MagicMenu">
+      <div class="container">
+        <a class="navbar-brand" href="{{ site.baseurl }}/index.html">
+          <strong>{{site.name}}</strong>
+        </a>
+        <button aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler collapsed" data-target="#navbarColor02" data-toggle="collapse" type="button">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse" id="navbarColor02" style="">
-            <ul class="navbar-nav mr-auto d-flex align-items-center">
-               {% include menu-header.html %}
-            </ul>
-            <!-- <ul class="navbar-nav ml-auto d-flex align-items-center">
+        <div class="navbar-collapse collapse" id="navbarColor02" >
+          <ul class="navbar-nav ml-auto d-flex align-items-center">
+            {% include menu-header.html %}
+          </ul>
+          <!-- <ul class="navbar-nav ml-auto d-flex align-items-center">
                 {% include search-lunr.html %}
             </ul> -->
         </div>
-    </div>
+      </div>
     </nav>
 
     <!-- Search Results -->
-    <div id="lunrsearchresults">
-        <ul class="mb-0"></ul>
-    </div>
-
-    <!-- Content -->
-    <main role="main" class="site-content">
-        {{ content }}
+        <!-- <div id="lunrsearchresults">
+      <ul class="mb-0"></ul>
+    </div> -->
+    
+        <!-- Content -->
+    <main class="site-content" role="main">
+      {% include intro.html %}
+      {{ content }}
     </main>
 
 
     <!-- Scripts: popper, bootstrap, theme, lunr -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script crossorigin="anonymous" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script crossorigin="anonymous" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 
     <script src="{{site.baseurl}}/assets/js/theme.js"></script>
 
 
     <!-- Footer -->
     <footer class="bg-white border-top p-3 text-muted ">
-        <div class="container">
+      <div class="container">
+        <div class="row justify-content-center">
+          <a class="fa fa-github" href={{site.data.author_info.github}}></a>
+          <a class="fa fa-twitter" href={{site.data.author_info.twitter}}></a>
+        </div>
 
         <div class="row align-items-center justify-content-between">
           <div>
             <span>
-              Portfolio website by James Leung.
+              Portfolio website by James Leung with
+              <a href="https://wowthemesnet.github.io/mundana-theme-jekyll/index.html">Mundana</a>
+              theme.
             </span>
           </div>
 
@@ -87,12 +101,12 @@
             {% for logo in site.data.footer_logos %}
               <a href={{logo.image-url}}>
                 <img class="h-6 transparent-img" src="{{site.baseurl}}/assets/images/{{logo.image}}" alt={{logo.name}}>
-              </a> 
+              </a>
             {% endfor %}
           </div>
-            <!-- <div>
+          <!-- <div>
                 <span class="navbar-brand mr-2 mb-0"><strong>(GITHUB PAGES, JEKYLL, BOOTSTRAP V4)</strong></span>
-                <span>Copyright © <script>document.write(new Date().getFullYear())</script>.</span>
+                <span>Copyright © <temp data-prettydiff-ignore><temp data-prettydiff-ignore><temp data-prettydiff-ignore><temp data-prettydiff-ignore><temp data-prettydiff-ignore><temp data-prettydiff-ignore><temp data-prettydiff-ignore><temp data-prettydiff-ignore><temp data-prettydiff-ignore><temp data-prettydiff-ignore><script>document.write(new Date().getFullYear())</script></temp></temp></temp></temp></temp></temp></temp></temp></temp></temp>.</span>
                 <span>Mundana theme from jekyllthemes.org</span>
 
                 <a class="text-dark ml-1" target="_blank" href="https://github.com/wowthemesnet/mundana-theme-jekyll"><i class="fab fa-github"></i> Fork on Github</a>
@@ -101,15 +115,15 @@
             <div> 
 
             </div> -->
-            <!-- <div>
+                                                                                                                <!-- <div>
                 Made with <a target="_blank" class="text-dark font-weight-bold" href="https://www.wowthemes.net/mundana-jekyll-theme/"> Mundana Jekyll Theme </a> by <a class="text-dark" target="_blank" href="https://www.wowthemes.net">WowThemes</a>.
             </div> -->
         </div>
-        </div>
+      </div>
     </footer>
 
     {% include tracking-footer.html %}
 
-</body>
+  </body>
 
 </html>
