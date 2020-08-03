@@ -1,0 +1,61 @@
+---
+title: "About Me"
+layout: default
+permalink: "/about.html"
+---
+
+<div class="container">
+
+  <h4 class="font-weight-bold spanborder">
+    <span>{{page.title}}</span>
+  </h4>
+
+  <div class="row vertical-spacing">
+    <div class="col-lg-8">
+      <div class="mb-5 d-flex justify-content-between main-loop-card">
+        <div class="col-lg-3">
+          <img src="{{ site.baseurl }}/assets/images/self.jpg" alt="james-leung">
+        </div>
+        <div class="pr-3">
+          Towards the end of my Ph.D. I had gathered 5 years of experience in Object-Oriented Programming, primarily in Python. A workshop in Web Development inspired me to apply my programming skills to build practical, multi-functional websites. Having completed a few projects and more than 100 LeetCode questions, I believe I am well equipped to become a software developer, with a focus on developing web applications. My rigorous scientific education also gives me an edge in solving abstract technical problems.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h4 class="font-weight-bold spanborder">
+    <span>My education</span>
+  </h4>
+
+  {% for degree in site.data.degrees %}
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="mb-5 d-flex justify-content-between main-loop-card">
+          <div class="pr-3">
+            <h2 class="mb-1 h4 font-weight-bold">
+              {{ degree.title }}
+              at
+              {{ degree.school }}
+            </h2>
+            <p class="text-muted">
+              Graduated in
+              {{ degree.graduation-date | date: '%b, %Y' }}
+            </p>
+            <p class="excerpt">
+              {{ degree.description }}
+            </p>
+          </div>
+          {% if degree.image %}
+            <div class="col-md-3 pr-0 text-right">
+              <!-- Replace with school URL's -->
+              <a href="{{degree.image-url}}">
+                <img class="w-100" src="{% if degree.image contains "://" %}{{ degree.image }}{% else %}{{ site.baseurl }}/{{ degree.image }}{% endif %}" alt="{{ degree.school }}">
+              </a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+
+    </div>
+  {% endfor %}
+</div>
