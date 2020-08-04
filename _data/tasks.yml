@@ -1,0 +1,14 @@
+- name: Presentable Front-end Applications
+  desc: Designing smart and user-friendly interface, whether it's a single-page app or a static website, to ensure a pleasant user experience.
+  icons:
+    - user
+- name: Solid Back-end Services
+  desc: Building a full-fledged REST API on the server side that executes queries and commands on a database.
+  icons:
+    - server
+    - exchange-alt
+    - database
+- name: Continuous Software Deployment
+  desc: Fully deploy a website or software on a cloud or remote server and establish a robust CI/CD pipeline equipped with testing.
+  icons:
+    - sync

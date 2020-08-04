@@ -10,14 +10,16 @@ permalink: "/about.html"
     <span>{{page.title}}</span>
   </h4>
 
-  <div class="row vertical-spacing">
+  <div class="row">
     <div class="col-lg-8">
-      <div class="mb-5 d-flex justify-content-between main-loop-card">
-        <div class="col-lg-3">
-          <img src="{{ site.baseurl }}/assets/images/self.jpg" alt="james-leung">
+      <div class="mb-5 d-flex justify-content-between ">
+        <div class="col-4 col-md-3 pl-0">
+          <img class="w-100" src="{{ site.baseurl }}/assets/images/self.jpg" alt="james-leung">
         </div>
-        <div class="pr-3">
-          Towards the end of my Ph.D. I had gathered 5 years of experience in Object-Oriented Programming, primarily in Python. A workshop in Web Development inspired me to apply my programming skills to build practical, multi-functional websites. Having completed a few projects and more than 100 LeetCode questions, I believe I am well equipped to become a software developer, with a focus on developing web applications. My rigorous scientific education also gives me an edge in solving abstract technical problems.
+        <div class="col-8 col-md-9 pl-3">
+          <p class="self-intro">
+            {{ site.data.author_info.about }}
+          </p>
         </div>
       </div>
     </div>
@@ -31,7 +33,7 @@ permalink: "/about.html"
     <div class="row">
       <div class="col-lg-8">
         <div class="mb-5 d-flex justify-content-between main-loop-card">
-          <div class="pr-3">
+          <div class="col-8 col-md-9 pr-3">
             <h2 class="mb-1 h4 font-weight-bold">
               {{ degree.title }}
               at
@@ -46,7 +48,7 @@ permalink: "/about.html"
             </p>
           </div>
           {% if degree.image %}
-            <div class="col-md-3 pr-0 text-right">
+            <div class="col-4 col-md-3 pr-0 text-right">
               <!-- Replace with school URL's -->
               <a href="{{degree.image-url}}">
                 <img class="w-100" src="{% if degree.image contains "://" %}{{ degree.image }}{% else %}{{ site.baseurl }}/{{ degree.image }}{% endif %}" alt="{{ degree.school }}">
