@@ -194,6 +194,12 @@ a:hover {
   color: #025d45;
   text-decoration: underline;
 }
+.hover-white {
+  color: white;
+}
+.hover-white:hover {
+  color: white;
+}
 
 a:not([href]):not([tabindex]) {
   color: inherit;
@@ -9769,7 +9775,7 @@ a.text-indigo:focus {
 }
 
 .text-orange {
-  color: #fb7900 !important;
+  color: #fbb500 !important;
 }
 
 a.text-orange:hover,

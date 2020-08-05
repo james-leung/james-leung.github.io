@@ -42,8 +42,8 @@
     <nav class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top" id="MagicMenu">
       <div class="container">
         <div class="">
-          <i class="fas fa-robot robot-icon"></i>
           <a class="navbar-brand " href="{{ site.baseurl }}/index.html">
+            <i class="fas fa-robot robot-icon"></i>
             <strong>{{site.name}}</strong>
           </a>
         </div>
@@ -62,11 +62,11 @@
     </nav>
 
     <!-- Search Results -->
-                                                                    <!-- <div id="lunrsearchresults">
+                        <!-- <div id="lunrsearchresults">
       <ul class="mb-0"></ul>
-    </div> -->
-                                                                                    
-                                                                <!-- Content -->
+    </div> -->                
+                        
+                        <!-- Content -->
     <main class="site-content" role="main">
       {% include intro.html %}
       {{ content }}
@@ -85,14 +85,15 @@
     <footer class="bg-white border-top p-3 text-muted ">
       <div class="container">
         <div class="row justify-content-center">
-          <a class="fa fa-github" target="_blank" href={{site.data.author_info.github}}></a>
-          <a class="fa fa-twitter" target="_blank" href={{site.data.author_info.twitter}}></a>
+          <a class="fa fa-github hover-white" target="_blank" href={{site.data.author_info.github}}></a>
+          <a class="fa fa-twitter hover-white" target="_blank" href={{site.data.author_info.twitter}}></a>
         </div>
 
         <div class="row align-items-center justify-content-between">
           <div>
             <span>
-              Portfolio website by James Leung
+              Portfolio website by
+              <a href="/">James Leung</a>
             </span>
           </div>
 

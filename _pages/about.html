@@ -1,7 +1,7 @@
 ---
 title: "About Me"
 layout: default
-permalink: "/about.html"
+permalink: "/about"
 ---
 
 <div class="container">
@@ -49,9 +49,8 @@ permalink: "/about.html"
           </div>
           {% if degree.image %}
             <div class="col-4 col-md-3 pr-0 text-right">
-              <!-- Replace with school URL's -->
               <a href="{{degree.image-url}}">
-                <img class="w-100" src="{% if degree.image contains "://" %}{{ degree.image }}{% else %}{{ site.baseurl }}/{{ degree.image }}{% endif %}" alt="{{ degree.school }}">
+                <img class="w-100" src="{{ site.baseurl }}/assets/images/{{ degree.image }}" alt="{{ degree.school }}">
               </a>
             </div>
           {% endif %}

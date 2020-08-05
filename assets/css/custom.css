@@ -3,6 +3,10 @@
   margin-right: 20px;
 }
 
+.page-highlight {
+  border-bottom: 4px solid #aaa;
+}
+
 .vertical-spacing {
   margin: 50px auto;
 }

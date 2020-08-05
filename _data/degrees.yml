@@ -3,15 +3,15 @@
   location: North Carolina, USA
   graduation-date: "2020-09-01"
   description: Successfully built a python simulator for quantum circuits, which helped suppress experimental errors in ion traps.
-  image: https://cdn.britannica.com/84/116684-004-E19D75DB/Duke-University-Chapel-Durham-NC.jpg
+  image: duke.jpg
   image-url: https://phy.duke.edu/
 
 - title: M.Sc. in Physics
   school: Georgia Institute of Technology
   location: Georgia, USA
   graduation-date: "2017-01-01"
-  description: Completed 45-credit worth of graduate-level courses. Wrote program for optimizing ion trap quantum computers. Published work in <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.120.020501">Physics Review Letters</a> as first author.
-  image: https://gtpac.org/wp-content/uploads/2020/05/Georgia-Tech-Tower-199x300.jpg
+  description: Completed 45-credit worth of graduate-level courses. Wrote programme for optimising ion trap quantum computers. Published work in <a href="https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.120.020501">Physics Review Letters</a> as first author.
+  image: gatech.jpg
   image-url: https://physics.gatech.edu/
 
 - title: B.Sc. in Physics
@@ -19,5 +19,5 @@
   location: Hong Kong
   graduation-date: "2015-05-01"
   description: Studied physics in the theoretical stream, with a focus on atomic physics. Took part in an 8-month exchange programme to UC Berkeley.
-  image: https://i.imgur.com/zCbuTZF.jpg
+  image: cuhk.jpg
   image-url: http://www.phy.cuhk.edu.hk/
