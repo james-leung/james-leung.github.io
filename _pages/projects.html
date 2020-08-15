@@ -14,10 +14,9 @@ permalink: "/projects"
       <div class="p-4 border rounded">
         <div class="row">
           <div class="col-md-3 mb-4 mb-md-0">
-            <!-- <img alt="{{ project.name }}" src="{{site.baseurl}}/{{ project.image }}"/> -->
             <img
               alt="{{ project.name }}"
-              src="{{ project.image | absolute_url }}"
+              src="{{ site.baseurl }}/assets/images/{{ project.image }}"
             />
           </div>
           <div class="col-md-9">
@@ -25,7 +24,6 @@ permalink: "/projects"
               <h4 class="text-dark mb-0">{{ project.name }}</h4>
               <div class="excerpt">{{ project.description }}</div>
             </a>
-            <div class="icon-block mt-3 d-flex justify-content-between"></div>
           </div>
         </div>
       </div>
