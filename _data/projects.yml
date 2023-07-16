@@ -2,16 +2,13 @@
   techs: Angular, .Net Core, SQL Server
   description: A single-page app where customers can view a fast food restaurant menu and order food from online. Interactive UI for users to customise their burgers along with re-ordering functionality. Equipped with secure social login.
   image: burgler.jpg
-  url: http://burgler.azurewebsites.net/
 
 - name: TravelBug (Blog website)
   techs: Angular, .Net Core, SQL Server
   description: A full-fledged blog website where travellers can share their adventures with their followers. Blog photos are hosted on Imgur.
   image: travelbug-bg.jpg
-  url: https://travel-bug.azurewebsites.net
 
 - name: Profile Search Engine
   techs: React
   description: A mock search engine website based on Random User API. The user can filter preloaded profiles instantly based on their first and last names.
   image: profile-search.jpg
-  url: https://profile-search.azurewebsites.net
